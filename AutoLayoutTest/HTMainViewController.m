@@ -64,14 +64,14 @@
     myConstraint = [NSLayoutConstraint constraintWithItem:happyImageView attribute:NSLayoutAttributeWidth
                                                 relatedBy:NSLayoutRelationEqual
                                                    toItem:nil attribute:NSLayoutAttributeNotAnAttribute
-                                               multiplier:1.0f constant:100.0f];
+                                               multiplier:1.0f constant:120.0f];
     [self.view addConstraint:myConstraint];
     
     // 高度限制，100個單位
     myConstraint = [NSLayoutConstraint constraintWithItem:happyImageView attribute:NSLayoutAttributeHeight
                                                 relatedBy:NSLayoutRelationEqual
                                                    toItem:nil attribute:NSLayoutAttributeNotAnAttribute
-                                               multiplier:1.0f constant:100.0f];
+                                               multiplier:1.2f constant:100.0f];
     [self.view addConstraint:myConstraint];
 }
 
