@@ -14,23 +14,20 @@
 
 @implementation HTMainViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    NSLog(@"viewDidLoad");
     
     [self imageAutoLayout];
-
+    
     [self viewAutoLayout];
+}
+
+-(void)viewWillLayoutSubviews
+{
+    NSLog(@"viewWillLayoutSubviews");
 }
 
 -(void)imageAutoLayout
@@ -78,7 +75,7 @@
 -(void)viewAutoLayout
 {
     UIView *ViewA = [[UIView alloc]init];
-    ViewA.backgroundColor = [UIColor greenColor];
+    ViewA.backgroundColor = [UIColor redColor];
     [ViewA setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.view addSubview:ViewA];
     
