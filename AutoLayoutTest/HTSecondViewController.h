@@ -10,4 +10,7 @@
 
 @interface HTSecondViewController : UIViewController
 
+@property (nonatomic, retain) IBOutlet UIView *topLeftView;
+@property (nonatomic, retain) IBOutlet UIView *topRightView;
+@property (nonatomic, retain) IBOutlet UIView *bottomView;
 @end
