@@ -8,12 +8,13 @@
 
 #import "HTAppDelegate.h"
 #import "HTMainViewController.h"
+#import "HTSecondViewController.h"
 
 @implementation HTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    HTMainViewController *vc = [[HTMainViewController alloc] init];
+    HTSecondViewController *vc = [[HTSecondViewController alloc] init];
     
     UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc];
     

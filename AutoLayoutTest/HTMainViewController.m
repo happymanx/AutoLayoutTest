@@ -74,12 +74,12 @@
 
 -(void)viewAutoLayout
 {
-    UIView *ViewA = [[UIView alloc]init];
+    UIView *ViewA = [[UIView alloc] init];
     ViewA.backgroundColor = [UIColor redColor];
     [ViewA setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.view addSubview:ViewA];
     
-    UIView *ViewB = [[UIView alloc]init];
+    UIView *ViewB = [[UIView alloc] init];
     ViewB.backgroundColor = [UIColor blueColor];
     [ViewB setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.view  addSubview:ViewB];

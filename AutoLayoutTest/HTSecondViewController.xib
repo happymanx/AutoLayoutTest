@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HTSecondViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xe0-Fm-U5b" userLabel="Green View">
+                    <rect key="frame" x="20" y="20" width="130" height="250"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVh-pM-5FH" userLabel="Blue View">
+                    <rect key="frame" x="170" y="20" width="130" height="250"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H4s-bk-pmr" userLabel="Purple View">
+                    <rect key="frame" x="20" y="298" width="280" height="250"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.77254909279999995" green="0.51372551919999998" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="H4s-bk-pmr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="0BM-KX-lTY"/>
+                <constraint firstItem="BVh-pM-5FH" firstAttribute="width" secondItem="xe0-Fm-U5b" secondAttribute="width" id="5GP-Aj-gpY"/>
+                <constraint firstItem="xe0-Fm-U5b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="BGW-4B-GiG"/>
+                <constraint firstItem="xe0-Fm-U5b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="CnG-As-avo"/>
+                <constraint firstItem="BVh-pM-5FH" firstAttribute="height" secondItem="H4s-bk-pmr" secondAttribute="height" id="EQl-ge-GQO"/>
+                <constraint firstItem="H4s-bk-pmr" firstAttribute="top" secondItem="xe0-Fm-U5b" secondAttribute="bottom" constant="28.000000219345111" id="NeH-J1-48u"/>
+                <constraint firstAttribute="trailing" secondItem="BVh-pM-5FH" secondAttribute="trailing" constant="19.999999816601076" id="PCX-FS-kys"/>
+                <constraint firstItem="BVh-pM-5FH" firstAttribute="height" secondItem="xe0-Fm-U5b" secondAttribute="height" id="PHP-dP-Ltq"/>
+                <constraint firstItem="BVh-pM-5FH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="RDb-Ow-fXO"/>
+                <constraint firstItem="BVh-pM-5FH" firstAttribute="leading" secondItem="xe0-Fm-U5b" secondAttribute="trailing" constant="20.000000183398896" id="Vr9-mC-kvR"/>
+                <constraint firstAttribute="bottom" secondItem="H4s-bk-pmr" secondAttribute="bottom" constant="19.999999780654889" id="qyg-wn-Nit"/>
+                <constraint firstAttribute="trailing" secondItem="H4s-bk-pmr" secondAttribute="trailing" constant="19.999999816601076" id="uNY-Dj-cHZ"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
