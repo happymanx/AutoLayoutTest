@@ -23,6 +23,7 @@
 		9670EB1C19B4820F00ECAEB2 /* HTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670EB1A19B4820F00ECAEB2 /* HTMainViewController.m */; };
 		9670EB1D19B4820F00ECAEB2 /* HTMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9670EB1B19B4820F00ECAEB2 /* HTMainViewController.xib */; };
 		9670EB2019B482AF00ECAEB2 /* happyman.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9670EB1F19B482AF00ECAEB2 /* happyman.jpeg */; };
+		9670EB2219B5610400ECAEB2 /* sun flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9670EB2119B5610400ECAEB2 /* sun flower.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		9670EB1A19B4820F00ECAEB2 /* HTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMainViewController.m; sourceTree = "<group>"; };
 		9670EB1B19B4820F00ECAEB2 /* HTMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HTMainViewController.xib; sourceTree = "<group>"; };
 		9670EB1F19B482AF00ECAEB2 /* happyman.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = happyman.jpeg; sourceTree = "<group>"; };
+		9670EB2119B5610400ECAEB2 /* sun flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sun flower.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 		9670EB1E19B482AF00ECAEB2 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9670EB2119B5610400ECAEB2 /* sun flower.jpg */,
 				9670EB1F19B482AF00ECAEB2 /* happyman.jpeg */,
 			);
 			path = Resource;
@@ -243,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9670EB2219B5610400ECAEB2 /* sun flower.jpg in Resources */,
 				9670EAFD19B481C000ECAEB2 /* Images.xcassets in Resources */,
 				9670EB2019B482AF00ECAEB2 /* happyman.jpeg in Resources */,
 				9670EB1D19B4820F00ECAEB2 /* HTMainViewController.xib in Resources */,
@@ -475,6 +479,7 @@
 				9670EB1519B481C100ECAEB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9670EB1619B481C100ECAEB2 /* Build configuration list for PBXNativeTarget "AutoLayoutTestTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +488,7 @@
 				9670EB1819B481C100ECAEB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

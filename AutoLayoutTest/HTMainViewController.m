@@ -35,7 +35,7 @@
 
 -(void)imageAutoLayout
 {
-    UIImageView *happyImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"happyman.jpeg"]];
+    UIImageView *happyImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"sun flower.jpg"]];
     [happyImageView setAlpha:0.7];
     [self.view addSubview:happyImageView];
     
@@ -60,7 +60,7 @@
                                                multiplier:1.0f constant:-50.0f];
     [self.view addConstraint:myConstraint];
     
-    // 寬度限制，100個單位
+    // 寬度限制，120個單位
     myConstraint = [NSLayoutConstraint constraintWithItem:happyImageView attribute:NSLayoutAttributeWidth
                                                 relatedBy:NSLayoutRelationEqual
                                                    toItem:nil attribute:NSLayoutAttributeNotAnAttribute
@@ -90,24 +90,24 @@
     
     NSMutableArray *myConstraints = [NSMutableArray array];
     
-    // 從水平方向佈局
+    // 從水平方向佈局，由畫面左側開始，間距30個單位寬度，設定100單位寬度的ViewA，間隔10個單位寬度後，再設置單位寬度不能小於100的ViewB，最右側則與畫面間格一個預設距離
     [myConstraints addObjectsFromArray:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[ViewA(100)]-10-[ViewB(>=100)]-|"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-30-[ViewA(100)]-10-[ViewB(>=100)]-|"
                                              options:NSLayoutFormatDirectionLeadingToTrailing
                                              metrics:nil
                                                views:NSDictionaryOfVariableBindings(ViewA,ViewB)]];
     
     
-    // 從垂直方向佈局
+    // 從垂直方向佈局，設定，ViewA為100個單位高度，並且與畫面底部間格一個預設距離
     [myConstraints addObjectsFromArray:
      [NSLayoutConstraint constraintsWithVisualFormat:@"V:[ViewA(100)]-|"
                                              options:NSLayoutFormatDirectionLeadingToTrailing
                                              metrics:nil
                                                views:NSDictionaryOfVariableBindings(ViewA)]];
     
-    // 從垂直方向佈局
+    // 從垂直方向佈局，ViewB的高度與ViewA相同，並且與畫面底部間格40單位距離
     [myConstraints addObjectsFromArray:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[ViewB(ViewA)]-|"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[ViewB(ViewA)]-40-|"
                                              options:NSLayoutFormatDirectionLeadingToTrailing
                                              metrics:nil
                                                views:NSDictionaryOfVariableBindings(ViewB,ViewA)]];
